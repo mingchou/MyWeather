@@ -1,14 +1,14 @@
 node {
-    /* def app */
+    def app
 
     stage('Checkout') {
-        checkout scm
 	echo 'Checkout'
+	checkout scm
     }
 
     stage('Build') {
-        /* app = docker.build("mingchou/MyWeather") */
 	echo 'Build'
+        app = docker.build("mingchou/MyWeather")
     }
 
     stage('Deploy') {

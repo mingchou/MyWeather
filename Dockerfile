@@ -1,5 +1,6 @@
 # 使用官方的 Python 執行環境作為基本的 Docker 影像
 FROM python:2.7-slim
+MAINTAINER stone123456@gmail.com
 
 # 設定工作目錄為 /app
 WORKDIR /app
