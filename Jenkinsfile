@@ -8,7 +8,7 @@ node {
 
     stage('Build') {
 	echo 'Build'
-        app = docker.build("mingchou/MyWeather")
+        app = docker.build("mingchou/my_weather")
     }
 
     stage('Deploy') {
