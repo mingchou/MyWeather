@@ -8,8 +8,7 @@ node {
 
     stage('Build') {
 	echo 'Build'
-	echo $PWD
-        /* app = docker.build("mingchou/my_weather") */
+        app = docker.build("my_weather_${env.BUILD_ID}")
     }
 
     stage('Deploy') {
